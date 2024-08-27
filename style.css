@@ -6,16 +6,109 @@
 .header{
     min-height:100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/institute.png);
+    background: radial-gradient(#052a3a, #011016);
     background-position: center;
     background-size: cover;
-    position: relative;
+    position: relative;         
+    
+
 }
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color:#555;
+}
+.container{
+    max-width:1200px;
+    margin: auto;
+    padding-left: 125px;
+    padding-right: 25px;
+    padding-top: 80px;
+    padding-top:50px;
+    
+}
+.Row{
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 p{
+    padding:15px 0 25px;
+    color:#f0ffff;
+}
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+    
+}
+.col-2 img{
+    max-width: 60%;
+    
+    
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    color: #fff;
+    
+}
+.btn{
+    display: inline-block;
+    background: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 30px 15px;
+    border-radius: 20px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #ff6600;
+}
+
+.header .Row{
+    margin-top: 70px;
+}
+@media(max-width: 700px){
+    
+    
+    .container{
+        padding: 20px 0;
+        text-align: center;
+        flex-direction: column;
+        
+    }
+    .col-2 h1{
+        font-size: 26px;
+        line-height: 38px;
+    }
+    .col-2 img{
+        padding: 70px 0;
+    }
+    
+}
+
+
 nav{
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
+    width:80%;
+    height: 50px;
+    margin: auto;
+    background:#ff6600;
+    display: flex;
+    align-items: center;
+    padding: 5px    10%;
+    top:  0;
+    
+    
 }
 nav img{
     width:50px;
@@ -39,7 +132,7 @@ nav img{
     content:'';
     width: 0%;
     height: 2px;
-    background: #f44336;;
+    background: #ff6600;;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -47,48 +140,16 @@ nav img{
 .nav-links ul li:hover::after{
     width: 100%;
 }
-.text-box{
-    width:90%;
-    color:#fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-.text-box h1{
-    font-size: 62px;
-    margin-top: 50px;
-}
-.text-box p{
-    margin: 10px 0 40px;
-    font-size: 21px;
-    color:#fff;
-}
-.hero-btn{
-    display:inline-block;
-    text-decoration:none;
-    color:#fff;
-    border:1px solid #fff;
-    padding:12px 34px;
-    font-size: 13px;
-    background:transparent;
-    position: relative;
-    cursor: pointer;
-}
-.hero-btn:hover{
-    border:1px solid #f44336;
-    background: #f44336;
-    transition: 1s;
-}
+
+
+
+
 nav .fa{
     display: none;
 }
 /*----media query for less than or equal to 700pixel screen size-----*/
 @media(max-width:700px){
-    .text-box h1{
-        font-size: 20px;
-    }
+
     .nav-links ul li{
         display: block;
     }
@@ -146,6 +207,9 @@ nav .fa{
     .row h1{
         font-size: 24px;
     }
+    .hero-text {
+        flex-direction:column ;
+    }
 }
 /*-------Role-------*/
 .Role{
@@ -172,7 +236,7 @@ p{
 }
 .Role-col{
     flex-basis: 31%;
-    background: #f8e3e3;
+    background: #ddf0f8;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
