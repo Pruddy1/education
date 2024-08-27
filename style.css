@@ -39,6 +39,10 @@ p{
 .col-2 p{
     padding:15px 0 25px;
     color:#f0ffff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    
 }
 
 .col-2{
@@ -58,6 +62,31 @@ p{
     color: #fff;
     
 }
+.col-3 h1{
+    font-size: 40px;
+    line-height: 60px;
+    margin: 25px 0;
+    color: #fff;
+    
+}
+.col-3 img{
+    max-width: 60%;
+}  
+.col-3 p{
+    padding:15px 0 8px;
+    color:#f0ffff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    
+}
+
+.col-3{
+    flex-basis: 50%;
+    min-width: 300px;
+    
+}
+    
 .btn{
     display: inline-block;
     background: #ff6600;
@@ -65,7 +94,7 @@ p{
     padding: 10px 20px;
     margin: 30px 15px;
     border-radius: 20px;
-    transition: background 0.5s;
+    transition: background 0.5s
 }
 .btn:hover{
     background: #ff6600;
@@ -89,6 +118,22 @@ p{
     }
     .col-2 img{
         padding: 70px 0;
+    }
+    .col-3 img{
+        padding: 70px 0;
+    }
+    .col-3 h1{
+        font-size: 26px;
+        line-height: 38px;
+    }
+    .col-3 p{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .small-container{
+        padding: 20px 0;
+        text-align: center;
+        flex-direction: column;
     }
     
 }
@@ -132,7 +177,7 @@ nav img{
     content:'';
     width: 0%;
     height: 2px;
-    background: #ff6600;;
+    background: #fff;;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -155,7 +200,7 @@ nav .fa{
     }
     .nav-links{
         position:fixed;
-        background: #f44336;
+        background: #ff6600;
         height: 100vh;
         width:200px;
         top:0;
@@ -253,22 +298,25 @@ margin: 10px 0;
 
 
 /*-------call to action--------*/
+
 .cta{
-    margin: 100px auto;
-    width:80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
-    url(images/educators6.png);
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-    text-align: center;
-    padding: 100px 0;
+    background: radial-gradient(#052a3a, #011016);
+    margin-top: 80px;
+    padding: 10px 0;
+    
 }
-.cta h1{
-    color:#fff;
-    margin-bottom: 40px;
-    padding: 0;
+.col-2 .cta-img{
+    max-width: 60%;
+    padding: 0px;
 }
+
+.small-container{
+    max-width: 1080px;
+    margin:auto;
+    padding-left: 25px;
+    padding-right:25px;
+}
+
 @media(max-width:700px){
     .cta h1{
         font-size: 24px;
@@ -286,7 +334,7 @@ margin: 10px 0;
     font-weight: 600;
 }
 .icons .fa{
-    color:#f44336;
+    color:#ff6600;
     margin: 0 13px;
     cursor: pointer;
     padding: 18px 0;
